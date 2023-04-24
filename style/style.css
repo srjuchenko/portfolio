@@ -1,0 +1,130 @@
+/* RESET and GENERAL*/
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+:root {
+  --text-color: #f7f8fa;
+  --headers-color: #d95204;
+  --background: #0d0d0d;
+  --second-background: #730217;
+  --btns-color: #d93d04;
+  --btns-color-hover: #ed6f41;
+  --main-font: "Oxygen mono", monospace;
+  --sub-font: "Oxygen", sans-serif;
+  --font-size: 1.3rem;
+}
+/* https://color.adobe.com/trends/Ui/ux */
+
+/* https://github.com/srjuchenko */
+/* https://www.linkedin.com/in/sergey-juchenko/ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--background);
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+
+a {
+  color: var(--btns-color);
+}
+
+a:hover {
+  color: var(--btns-color-hover);
+  text-decoration: none;
+}
+
+/* NAVIGATION  */
+nav {
+  font-family: var(--main-font);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--btns-color);
+}
+
+nav [class*="fa-"]:hover {
+  color: var(--btns-color-hover);
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: var(--btns-color-hover);
+}
+
+/* INTRO SECTION */
+.intro {
+  padding-bottom: 10rem;
+}
+
+.intro p {
+  width: 50%;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.intro .name {
+  font-family: var(--sub-font);
+}
+
+.name span {
+  font-family: var(--main-font);
+  font-size: 4rem;
+  color: var(--headers-color);
+  display: block;
+}
+
+.intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+.intro h2 .semi-colon {
+  color: var(--btns-color);
+}
+
+/* CONTACT SECTION */
+.contact {
+  background-color: #730217;
+  padding: 3rem 0;
+  text-align: center;
+  font-family: var(--sub-font);
+}
+
+.contact h2 {
+  font-family: var(--main-font);
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  margin-bottom: 2rem;
+}
