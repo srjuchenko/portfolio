@@ -79,6 +79,12 @@ nav a:hover {
   color: var(--btns-color-hover);
 }
 
+.button {
+  background-color: var(--second-background);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
 /* INTRO SECTION */
 .intro {
   padding-bottom: 10rem;
@@ -127,4 +133,42 @@ nav a:hover {
 
 .contact-description {
   margin-bottom: 2rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer .icon-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer .icon-link a {
+  font-size: 3rem;
+}
+
+footer .credits {
+  font-size: 1rem;
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
